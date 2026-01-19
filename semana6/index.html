@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+
+    <!-- Adaptación a dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Contenedor principal -->
+<section class="contenedor">
+
+    <h1>Crear Cuenta</h1>
+
+    <!-- Formulario de registro -->
+    <form id="registro">
+
+        <!-- Nombre -->
+        <div class="campo">
+            <input type="text" id="txtNombre" placeholder="Nombre completo">
+            <p id="errorNombre"></p>
+        </div>
+
+        <!-- Correo -->
+        <div class="campo">
+            <input type="email" id="txtEmail" placeholder="Correo electrónico">
+            <p id="errorEmail"></p>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="campo">
+            <div class="input-eye">
+                <input type="password" id="txtClave" placeholder="Contraseña">
+                <span id="eyeClave">👁</span>
+            </div>
+            <p id="errorClave"></p>
+        </div>
+
+        <!-- Confirmar contraseña -->
+        <div class="campo">
+            <div class="input-eye">
+                <input type="password" id="txtConfirmar" placeholder="Confirmar contraseña">
+                <span id="eyeConfirmar">👁</span>
+            </div>
+            <p id="errorConfirmar"></p>
+        </div>
+
+        <!-- Edad -->
+        <div class="campo">
+            <input type="number" id="txtEdad" placeholder="Edad">
+            <p id="errorEdad"></p>
+        </div>
+
+        <!-- Botones -->
+        <button type="submit" id="btnRegistrar" disabled>Registrar</button>
+        <button type="reset">Borrar formulario</button>
+
+    </form>
+</section>
+
+<!-- Enlace al archivo JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background: rgba(0,0,0,0.85);
+    padding: 30px;
+    width: 360px;
+    border-radius: 12px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #555;
+    background: #111;
+    color: white;
+}
+
+/* Campo correcto */
+input.correcto {
+    border-color: lime;
+}
+
+/* Campo incorrecto */
+input.incorrecto {
+    border-color: red;
+}
+
+p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Mensaje error */
+p.error {
+    color: red;
+}
+
+/* Mensaje correcto */
+p.ok {
+    color: lime;
+}
+
+.input-eye {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
