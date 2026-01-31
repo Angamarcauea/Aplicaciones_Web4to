@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Deportes y Actividad Física</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ENCABEZADO -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <span class="navbar-brand fw-bold">Mundo Deportivo</span>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#disciplinas">Disciplinas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- SECCIÓN PRINCIPAL -->
+<main class="container mt-4" id="inicio">
+
+    <!-- CARRUSEL -->
+    <div id="carouselDeportes" class="carousel slide mb-5" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button data-bs-target="#carouselDeportes" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#carouselDeportes" data-bs-slide-to="1"></button>
+            <button data-bs-target="#carouselDeportes" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg" class="d-block w-100">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carouselDeportes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" data-bs-target="#carouselDeportes" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- TABLA -->
+    <section id="disciplinas">
+        <h3 class="titulo">Deportes Populares</h3>
+
+        <table class="table table-bordered table-hover text-center">
+            <thead class="table-success">
+                <tr>
+                    <th>Deporte</th>
+                    <th>Tipo</th>
+                    <th>Participantes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fútbol</td>
+                    <td>Equipo</td>
+                    <td>11 vs 11</td>
+                </tr>
+                <tr>
+                    <td>Baloncesto</td>
+                    <td>Equipo</td>
+                    <td>5 vs 5</td>
+                </tr>
+                <tr>
+                    <td>Atletismo</td>
+                    <td>Individual</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="contacto" class="mt-4">
+        <h3 class="titulo">Formulario de Opinión</h3>
+
+        <form id="formContacto" class="card p-3">
+            <input type="text" id="nombre" class="form-control mb-2" placeholder="Nombre">
+            <input type="email" id="correo" class="form-control mb-2" placeholder="Correo electrónico">
+            <textarea id="mensaje" class="form-control mb-2" placeholder="Comentario sobre deportes"></textarea>
+
+            <button class="btn btn-success">Enviar</button>
+            <p id="error" class="text-danger mt-2"></p>
+        </form>
+    </section>
+
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer class="bg-success text-white text-center p-4 mt-5">
+    <p>Email: deportes@web.com | Teléfono: 0988888888</p>
+    <p>Facebook | Instagram | YouTube</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

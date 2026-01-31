@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("semana7-formulario-lista")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("semana8-bootstrap-js")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dcdeea524ffeecb10da134e6ca95ca8ba4463b4")]
-[assembly: System.Reflection.AssemblyProductAttribute("semana7-formulario-lista")]
-[assembly: System.Reflection.AssemblyTitleAttribute("semana7-formulario-lista")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a969cfcb37eef9ca50e8286cfb5015e118c9d6b")]
+[assembly: System.Reflection.AssemblyProductAttribute("semana8-bootstrap-js")]
+[assembly: System.Reflection.AssemblyTitleAttribute("semana8-bootstrap-js")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

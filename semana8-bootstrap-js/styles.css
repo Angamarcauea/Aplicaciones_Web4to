@@ -1,0 +1,17 @@
+/* Títulos */
+.titulo {
+    color: #198754;
+    margin-bottom: 15px;
+}
+
+/* Carrusel */
+.carousel img {
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Formulario */
+form {
+    background-color: #f1fdf6;
+    border-radius: 12px;
+}
