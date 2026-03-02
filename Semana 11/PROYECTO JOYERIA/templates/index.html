@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventario Joyería</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; background-color: #fdfaf4; }
+        h1 { color: #b8860b; }
+        .form-caja { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { border: 1px solid #eee; padding: 12px; text-align: left; }
+        th { background-color: #b8860b; color: white; }
+        .btn-del { color: red; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>✨ Panel de Inventario - Joyería</h1>
+    
+    <div class="form-caja">
+        <form action="/agregar" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre de la Joya" required>
+            <input type="text" name="material" placeholder="Material (Oro, Plata...)" required>
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+            <input type="number" step="0.01" name="precio" placeholder="Precio" required>
+            <button type="submit" style="background:#b8860b; color:white; border:none; padding:10px;">Agregar</button>
+        </form>
+    </div>
+
+    <table>
+        <tr>
+            <th>ID</th><th>Nombre</th><th>Material</th><th>Stock</th><th>Precio</th><th>Acción</th>
+        </tr>
+        {% for j in lista %}
+        <tr>
+            <td>{{ j.id }}</td>
+            <td>{{ j.nombre }}</td>
+            <td>{{ j.material }}</td>
+            <td>{{ j.cantidad }}</td>
+            <td>${{ j.precio }}</td>
+            <td><a href="/eliminar/{{ j.id }}" class="btn-del">Eliminar</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
